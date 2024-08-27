@@ -15,11 +15,12 @@ print(alphabet_soup(text))
 
 #EMOTICON PROBLEM:
 def emotify(words):
-    #The Dictionary, Assigning specific words to their specific special characters 
 
-    #Split the inputed sentence into words then replacing the specific words to their assigned special characters in the dictionary 
+#The Dictionary, Assigning specific words to their specific special characters 
+#Split the inputed sentence into words then replacing the specific words to their assigned special characters in the dictionary 
     emoticons = {"smile":":)", "grin": ":D", "sad": ":((", "mad": ">:("}
-    #Returning the edited sentence
+
+#Returning the edited sentence
     return " ".join(emoticons.get(word, word) for word in words.split())
 
 #Inputing the Sentence 
