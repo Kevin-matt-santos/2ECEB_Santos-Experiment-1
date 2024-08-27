@@ -1,0 +1,10 @@
+#ALPHABET SOUP PROBLEM:
+#Funtion that takes the possible word inside as a string
+def alphabet_soup(text):
+    # Sorts the letters of the word in the string in alphabetical order
+    return ''.join(sorted(text))
+
+#Inputting Word 
+text = input("Enter string: ")
+#Output Sentence
+print(alphabet_soup(text))
